@@ -1,14 +1,19 @@
 {
-    "Group": "Example",
-    "Name": "ExamplePlugin",
-    "Version": "0.0.2",
-    "Description": "An example plugin for HyTale!",
+    "Group": "HyTrek",
+    "Name": "HytrekBase",
+    "Version": "0.1.0",
+    "Description": "Hytale plugin adding various exploring and travelling features.",
     "Authors": [
         {
-            "Name": "It's you!"
+            "Name": "Skoowshot"
+        },
+        {
+            "Name": "IriDark"
+        },
+        {
+            "Name" : "Nub5s"
         }
     ],
-    "Website": "example.org",
     "ServerVersion": "*",
     "Dependencies": {
         
@@ -17,6 +22,6 @@
         
     },
     "DisabledByDefault": false,
-    "Main": "org.example.plugin.ExamplePlugin",
+    "Main": "com.skoow.hytrek.HytrekPlugin",
     "IncludesAssetPack": true
 }

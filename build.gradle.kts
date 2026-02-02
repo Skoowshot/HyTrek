@@ -62,7 +62,7 @@ tasks {
         archiveClassifier.set("")
         
         // Relocate dependencies to avoid conflicts
-        relocate("com.google.gson", "com.yourplugin.libs.gson")
+        relocate("com.google.gson", "com.skoowshot.libs.gson")
         
         // Minimize JAR size (removes unused classes)
         minimize()
