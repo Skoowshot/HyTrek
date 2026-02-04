@@ -1,8 +1,12 @@
 package com.skoow.hytrek;
 
+import com.hypixel.hytale.builtin.mounts.MountedByComponent;
+import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import com.skoow.hytrek.boarding.Boarding;
 
 import javax.annotation.Nonnull;
 
@@ -11,16 +15,23 @@ import javax.annotation.Nonnull;
  * event listeners.
  */
 public class HytrekPlugin extends JavaPlugin {
+    private static HytrekPlugin instance;
+
+    public static HytrekPlugin get() {
+        return instance;
+    }
 
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
 
     public HytrekPlugin(@Nonnull JavaPluginInit init) {
         super(init);
-        LOGGER.atInfo().log("Hello from " + this.getName() + " version " + this.getManifest().getVersion().toString());
     }
 
     @Override
     protected void setup() {
-        LOGGER.atInfo().log("Setting up plugin " + this.getName());
+        HytrekPlugin.instance = this;
+        LOGGER.atInfo().log("Setting up plugin " + getName());
+
+        Boarding.setup();
     }
 }

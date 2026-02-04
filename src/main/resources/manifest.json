@@ -1,6 +1,6 @@
 {
-    "Group": "HyTrek",
-    "Name": "HytrekBase",
+    "Group": "Hytrek",
+    "Name": "Hytrek",
     "Version": "0.1.0",
     "Description": "Hytale plugin adding various exploring and travelling features.",
     "Authors": [
@@ -11,7 +11,7 @@
             "Name": "IriDark"
         },
         {
-            "Name" : "Nub5s"
+            "Name": "Nub5s"
         }
     ],
     "ServerVersion": "*",
