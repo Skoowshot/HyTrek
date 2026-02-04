@@ -1,12 +1,12 @@
 package com.skoow.hytrek;
 
-import com.hypixel.hytale.builtin.mounts.MountedByComponent;
 import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.skoow.hytrek.boarding.Boarding;
+import com.skoow.hytrek.floating.Floating;
 
 import javax.annotation.Nonnull;
 
@@ -31,7 +31,8 @@ public class HytrekPlugin extends JavaPlugin {
     protected void setup() {
         HytrekPlugin.instance = this;
         LOGGER.atInfo().log("Setting up plugin " + getName());
-
+        var esr = getEntityStoreRegistry();
+        Floating.setup();
         Boarding.setup();
     }
 }

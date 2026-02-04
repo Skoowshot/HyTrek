@@ -7,6 +7,7 @@ import com.hypixel.hytale.server.core.modules.entity.component.TransformComponen
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.skoow.hytrek.HytrekPlugin;
 import com.skoow.hytrek.boarding.command.BoardCommand;
+import com.skoow.hytrek.boarding.command.RaftCommand;
 import com.skoow.hytrek.boarding.component.BoardComponent;
 import com.skoow.hytrek.boarding.component.BoardableComponent;
 import com.skoow.hytrek.boarding.systems.BoardingSystems;
@@ -26,6 +27,7 @@ public class Boarding {
         });
 
         HytrekPlugin.get().getCommandRegistry().registerCommand(new BoardCommand());
+        HytrekPlugin.get().getCommandRegistry().registerCommand(new RaftCommand());
 
         esr.registerSystem(new BoardingSystems.TickingBoardableSystem());
         esr.registerSystem(new BoardingSystems.TickingBoardedSystem());

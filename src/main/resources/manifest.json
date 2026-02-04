@@ -5,23 +5,36 @@
     "Description": "Hytale plugin adding various exploring and travelling features.",
     "Authors": [
         {
-            "Name": "Skoowshot"
+            "Name": "Skoowshot",
+            "Email": "",
+            "Url": ""
         },
         {
-            "Name": "IriDark"
+            "Name": "IriDark",
+            "Email": "",
+            "Url": ""
         },
         {
-            "Name": "Nub5s"
+            "Name": "Nub5s",
+            "Email": "",
+            "Url": ""
         }
     ],
-    "ServerVersion": "*",
+    "Website": "",
+    "Main": "com.skoow.hytrek.HytrekPlugin",
+    "ServerVersion": "",
     "Dependencies": {
         
     },
     "OptionalDependencies": {
         
     },
+    "LoadBefore": {
+        
+    },
     "DisabledByDefault": false,
-    "Main": "com.skoow.hytrek.HytrekPlugin",
-    "IncludesAssetPack": true
+    "IncludesAssetPack": true,
+    "SubPlugins": [
+        
+    ]
 }

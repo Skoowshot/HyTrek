@@ -1,0 +1,19 @@
+{
+  "Model": "VFX/Raft/Raft.blockymodel",
+  "Texture": "VFX/Raft/Raft_Texture.png",
+  "EyeHeight": 0.5,
+  "HitBox": {
+    "Max": {
+      "X": 1.25,
+      "Y": 0.3,
+      "Z": 1.25
+    },
+    "Min": {
+      "X": -1.25,
+      "Y": 0,
+      "Z": -1.25
+    }
+  },
+  "MinScale": 1,
+  "MaxScale": 1
+}
